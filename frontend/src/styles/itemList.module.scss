@@ -1,0 +1,36 @@
+
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 130%;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+}
+
+@media (width < 480px) {
+  .itemList {
+    gap: 20px;
+  }
+
+  .mainContainer {
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .mainHeader {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
